@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fume Hood Servicing & Certification</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#96145E', // Deep magenta
+                        primaryDark: '#6B0F45', // Darker shade for contrast
+                        accent: '#3B82F6', // Electric blue
+                        surface: '#FAFAFA', // Near white
+                        body: '#2D2D2D', // Neutral dark gray
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for specific requirements */
+        .section-heading {
+            @apply font-heading font-extrabold text-gray-900 text-3xl md:text-4xl mb-6 tracking-tight;
+        }
+        .body-text {
+            @apply text-body leading-relaxed text-lg;
+        }
+        .btn-primary {
+            @apply inline-block bg-primary hover:bg-primaryDark text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors duration-200 text-center;
+        }
+        .image-placeholder {
+            @apply bg-gray-200 border-2 border-dashed border-gray-400 flex items-center justify-center text-gray-500 font-medium text-center p-6 rounded-xl;
+        }
+    </style>
+</head>
+<body class="bg-surface font-sans text-body antialiased">
+
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="block">
+                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0Y23NXPDQFJ6WJ3BQH7M697.jpg" alt="Company Logo" class="h-10 md:h-12 w-auto object-contain mix-blend-multiply">
+            </a>
+            <a href="#quote" class="btn-primary py-2 px-4 md:px-6 text-sm md:text-base">
+                Request a Quote
+            </a>
+        </div>
+    </header>
+
+    <!-- 01 — Hero Section -->
+    <section class="relative pt-40 pb-32 flex items-center min-h-[600px] lg:min-h-[750px]">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 overflow-hidden bg-black">
+            <!-- Replace background-image url below with your actual image -->
+            <div class="w-full h-full bg-cover bg-center transform scale-105 opacity-50" style="background-image: url('https://platform-bcl.bsb-cdn.com/media/2026/08/01M0Y1BFZ7NSZESP995JDAQND4.png');"></div>
+        </div>
+
+        <!-- Content (Relative to sit on top of background) -->
+        <div class="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl space-y-6">
+                <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight uppercase drop-shadow-sm">
+                    Professional Fume Hood Servicing & Certification <br>
+                    <span class="text-gray-300 block mt-2 text-2xl md:text-3xl capitalize">Compliance You Can Trust</span>
+                </h1>
+                <p class="text-gray-200 text-lg md:text-xl leading-relaxed max-w-2xl drop-shadow-sm">
+                    Certified airflow testing, full documentation, and preventive maintenance — keep your lab compliant and your team safe.
+                </p>
+                <div class="pt-8">
+                    <a href="#quote" class="inline-flex items-center justify-between bg-primary hover:bg-primaryDark text-white font-heading font-bold rounded-full shadow-2xl transition-all duration-300 hover:-translate-y-1 transform p-2 w-full sm:w-auto max-w-[320px] border border-white/10">
+                        <span class="pl-6 pr-4 text-lg w-full text-center sm:text-left tracking-wide">Get Quote Now</span>
+                        <span class="w-12 h-12 flex-shrink-0 bg-white text-primary rounded-full flex items-center justify-center shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <p class="text-sm text-gray-300 mt-5 font-medium flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        Trusted by laboratories, research facilities, hospitals, and manufacturing plants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-7xl mx-auto px-4 mt-8"><hr class="border-gray-200"></div>
+
+    <!-- 02 — Problem Statement -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <h2 class="section-heading text-center mx-auto max-w-3xl">An unserviced fume hood is a compliance risk — and a safety risk.</h2>
+        
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <!-- Point 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-500 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Silent Safety Risks</h3>
+                <p class="body-text text-base text-gray-600">Inward airflow can quietly degrade without warning, exposing your staff to hazardous fumes and airborne contaminants.</p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-orange-50 rounded-2xl flex items-center justify-center text-orange-500 mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Fines & Shutdowns</h3>
+                <p class="body-text text-base text-gray-600">Skipping mandatory annual certifications risks costly fines, sudden operational shutdowns, and failing safety audits.</p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-accent mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-gray-900 mb-3">Administrative Burden</h3>
+                <p class="body-text text-base text-gray-600">Finding time for servicing, tracking expiration dates, and keeping documents organised is a constant, stressful burden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 — Solution -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 w-full h-[350px]">
+                <img src="https://platform-bcl.bsb-cdn.com/media/2026/08/01M0Y2R44NEBKE15943MD96BTT.jpg" alt="Technician inspecting fume hood components" class="w-full h-full object-cover rounded-xl shadow-md border-2 border-dashed border-gray-300 bg-gray-100 text-gray-400 text-sm flex items-center justify-center">
+            </div>
+            <div class="flex-1">
+                <h2 class="section-heading">Certified servicing that keeps you compliant and protected.</h2>
+                <div class="space-y-4 body-text mt-6">
+                    <p>
+                        We provide certified fume hood servicing and re-certification — airflow testing to ASHRAE Standard 110, full inspection, and complete documentation you can hand straight to an auditor.
+                    </p>
+                    <p>
+                        Whether you need a one-time servicing or an ongoing annual contract, our qualified technicians handle the testing, the paperwork, and the certification label — so your equipment stays compliant and your team stays protected.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 — Details Servis / USP -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 class="section-heading text-center mb-12">What's included in every service.</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- List Items -->
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Face velocity testing</strong> — confirms your hood is drawing air at a safe rate</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Inward airflow confirmation</strong> — tested to ASHRAE Standard 110</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Alarm system testing</strong> — make sure warning systems actually work</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Comprehensive inspection report</strong> — full record of findings</span>
+                </li>
+            </ul>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>NEA-compliant documentation</strong> — ready for audits, no scrambling</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Certification label affixed to cabinet</strong> — visible proof of compliance</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Qualified, certified technicians</strong> — experienced across multiple industries</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <span class="ml-3 body-text"><strong>Flexible off-hours scheduling</strong> — minimal disruption to your operations</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="w-full h-[350px] mt-8">
+            <img src="[insert image link here]" alt="Close-up of certification label" class="w-full h-full object-cover rounded-xl shadow-md border-2 border-dashed border-gray-300 bg-gray-100 text-gray-400 text-sm flex items-center justify-center">
+        </div>
+    </section>
+
+    <!-- 05 — Why Regular Servicing Matters (Comparison) -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="section-heading text-center mb-12">The cost of skipping servicing vs. servicing with us.</h2>
+            
+            <div class="grid md:grid-cols-2 shadow-lg rounded-xl overflow-hidden border border-gray-200">
+                <!-- Bad Side -->
+                <div class="bg-red-50 p-8">
+                    <h3 class="text-xl font-heading font-bold text-red-900 mb-6 text-center">If You Don't Service Regularly</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Airflow safety:</strong> Inward airflow compromised, exposing staff to hazardous fumes</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Regulatory compliance:</strong> Risk of fines and penalties for non-compliance</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Equipment reliability:</strong> Equipment breakdowns and costly emergency repairs</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-red-500 text-xl mr-3 leading-none">❌</span>
+                            <div class="body-text text-red-900"><strong>Audit readiness:</strong> No record of certification for audits</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Good Side -->
+                <div class="bg-primary/5 p-8 border-t md:border-t-0 md:border-l border-gray-200">
+                    <h3 class="text-xl font-heading font-bold text-primary mb-6 text-center">With Our Servicing</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Airflow safety:</strong> Certified airflow testing to ASHRAE Standard 110</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Regulatory compliance:</strong> Annual certification label for audit compliance</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Equipment reliability:</strong> Preventive maintenance to extend equipment lifespan</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-xl mr-3 leading-none">✅</span>
+                            <div class="body-text"><strong>Audit readiness:</strong> Full certification report documentation provided</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06 — Testimoni / Bukti -->
+    <section class="bg-primary py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-white text-center mb-16 tracking-tight">Trusted by industry leaders.</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl relative mt-4 md:mt-0 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute -top-6 left-8 bg-accent text-white w-12 h-12 flex items-center justify-center rounded-full text-5xl font-heading shadow-md pt-4">"</div>
+                    <p class="body-text italic mb-6 mt-4 text-gray-700">
+                        "Knowing our fume hoods are fully compliant takes a huge weight off our shoulders. The certification documentation provided was exactly what the safety auditors wanted to see. Complete peace of mind."
+                    </p>
+                    <div class="font-bold text-primary text-lg">— Sarah L.</div>
+                    <div class="text-sm text-gray-500 font-medium">Lab Operations Manager</div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl relative mt-4 md:mt-0 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute -top-6 left-8 bg-accent text-white w-12 h-12 flex items-center justify-center rounded-full text-5xl font-heading shadow-md pt-4">"</div>
+                    <p class="body-text italic mb-6 mt-4 text-gray-700">
+                        "Their team accommodated our tight schedule and came in over the weekend to service all 12 units without disrupting our ongoing research. The technicians were incredibly professional and thorough."
+                    </p>
+                    <div class="font-bold text-primary text-lg">— Dr. James K.</div>
+                    <div class="text-sm text-gray-500 font-medium">Head of Research, PharmaTech</div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl relative mt-4 md:mt-0 transform hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute -top-6 left-8 bg-accent text-white w-12 h-12 flex items-center justify-center rounded-full text-5xl font-heading shadow-md pt-4">"</div>
+                    <p class="body-text italic mb-6 mt-4 text-gray-700">
+                        "We rely on our hoods 24/7 for heavy chemical processing. The preventive maintenance they provide has essentially eliminated unexpected airflow breakdowns. Highly recommend their annual contract."
+                    </p>
+                    <div class="font-bold text-primary text-lg">— Marcus T.</div>
+                    <div class="text-sm text-gray-500 font-medium">EHS Director, Industrial ChemWorks</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07 — Pricing & Offer -->
+    <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8 border-y border-gray-200" id="pricing">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="section-heading text-center mb-12">Transparent servicing packages.</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                
+                <!-- Package A (Recommended) -->
+                <div class="bg-primary rounded-2xl overflow-hidden shadow-xl transform md:-translate-y-4 relative">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider z-20">
+                        Recommended
+                    </div>
+                    <div class="h-48 bg-primaryDark relative z-10 border-b border-white/10">
+                        <img src="[insert image link here]" alt="Technician performing quarterly maintenance" class="w-full h-full object-cover absolute inset-0 bg-gray-200/20 text-white/70 text-sm flex items-center justify-center italic">
+                    </div>
+                    <div class="p-8 text-white relative z-10">
+                        
+                        <h3 class="font-heading font-bold text-2xl text-white mb-2">Annual Servicing Contract</h3>
+                        <p class="text-white font-semibold text-xl mb-6">$1.2k – $2.4k SGD <span class="text-sm font-normal text-white/70">/year per unit</span></p>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Quarterly preventive maintenance (belt checks, pre-filter cleaning)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Annual re-certification by qualified technician</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Certification label affixed to cabinet</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-white/80 italic mb-6">
+                            Best for facilities that need ongoing compliance without tracking renewal dates themselves.
+                        </p>
+                        <a href="#quote" class="block w-full bg-white text-primary font-bold text-center py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                            Request Quote
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Package B -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 relative">
+                    <div class="h-48 relative border-b border-gray-100">
+                        <img src="[insert image link here]" alt="Technician conducting a one-time inspection" class="w-full h-full object-cover absolute inset-0 bg-gray-100 text-gray-400 text-sm flex items-center justify-center italic border-b border-dashed border-gray-300">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-heading font-bold text-2xl text-primary mb-2">One-Time Servicing</h3>
+                        <p class="text-accent font-semibold text-xl mb-6">$300 – $600 SGD <span class="text-sm font-normal text-gray-500">/unit</span></p>
+                        
+                        <ul class="space-y-4 mb-8 text-body">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Thorough inspection of all components</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Filter cleaning or replacement</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Performance testing & airflow verification</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-gray-500 italic mb-6">
+                            Best for a single unit, a first-time inspection, or a one-off compliance check.
+                        </p>
+                        <a href="#quote" class="block w-full border-2 border-primary text-primary font-bold text-center py-3 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                            Request Quote
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Optional Cross-Sell & Note -->
+            <div class="mt-12 text-center max-w-3xl mx-auto space-y-4">
+                <div class="bg-blue-50 border border-blue-100 text-blue-800 p-4 rounded-lg inline-block text-sm sm:text-base">
+                    <strong>Also servicing dehumidifiers?</strong> Book 3+ units across fume hood and dehumidifier servicing and get 10% off your total.
+                </div>
+                <p class="text-sm text-gray-500">
+                    <em>Note: Final price depends on hood size, type, and condition — confirmed after a quick assessment.</em>
+                </p>
+                <div class="flex items-center justify-center text-primary font-medium mt-4">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    Guarantee: Full inspection report and documentation provided with every service, ready for your next audit.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 08 — Is This Right for You? -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <h2 class="section-heading">Is our fume hood servicing right for you?</h2>
+        <p class="body-text mb-6">
+            Our servicing is built for labs, research facilities, and industrial sites that need certified, compliant fume hood maintenance. It's likely <strong>not</strong> the right fit if you:
+        </p>
+        <ul class="space-y-4 body-text mb-8 bg-gray-50 p-6 sm:p-8 rounded-xl border border-gray-100">
+            <li class="flex items-start">
+                <span class="text-gray-400 mr-3 mt-1">—</span>
+                <span>Only need dehumidifier servicing (ask us about that separately — or see the bundle above)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gray-400 mr-3 mt-1">—</span>
+                <span>Need same-day emergency repair rather than scheduled servicing/certification</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gray-400 mr-3 mt-1">—</span>
+                <span>Use highly specialised or proprietary fume hood equipment requiring manufacturer-only service</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gray-400 mr-3 mt-1">—</span>
+                <span>Are looking for a one-off DIY inspection rather than certified, documented servicing</span>
+            </li>
+        </ul>
+        <p class="body-text italic text-gray-600">
+            If any of the above sounds like you, we're happy to point you in the right direction — but for certified, compliant fume hood servicing, we're built exactly for that.
+        </p>
+    </section>
+
+    <!-- 09 — FAQ (Soalan Lazim) -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-heading text-center mb-12">Frequently asked questions.</h2>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: How often does my fume hood need to be serviced?</h4>
+                    <p class="body-text text-base">Annual certification by a qualified technician is required. Our Annual Servicing Contract also includes quarterly preventive maintenance in between certifications.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: What's included in a servicing visit?</h4>
+                    <p class="body-text text-base">Face velocity testing, inward airflow confirmation, alarm system testing, a comprehensive inspection report, and compliant documentation.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: Do I get proof of certification?</h4>
+                    <p class="body-text text-base">Yes — a certification label is affixed to the cabinet, and you'll receive a full inspection/certification report for your records and audits.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: How much does servicing cost?</h4>
+                    <p class="body-text text-base">One-Time Servicing ranges from $300–$600 per unit. Annual Servicing Contracts range from $1,200–$2,400/year per unit. Final pricing depends on hood size, type, and condition.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: Can servicing be scheduled outside our normal operating hours?</h4>
+                    <p class="body-text text-base">Yes, we offer flexible scheduling — including off-hours — to minimise disruption to your operations.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: What industries do you serve?</h4>
+                    <p class="body-text text-base">Laboratories, research facilities, manufacturing plants, hospitals, pharmaceutical facilities, and educational institutions.</p>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-surface p-6 rounded-lg border border-gray-100">
+                    <h4 class="font-heading font-bold text-lg text-primary mb-2">Q: How do I book a servicing appointment?</h4>
+                    <p class="body-text text-base">Fill in the enquiry form on this page or contact us directly — we'll confirm scope and provide a quote before scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10 — CTA (ke Form / Enquiry) -->
+    <section id="quote" class="bg-primary py-24 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-white mb-6 tracking-tight">Ready to get your fume hood certified?</h2>
+            <p class="text-xl text-white/90 mb-10">
+                Tell us a bit about your equipment and we'll get back to you with a quote and available servicing dates.
+            </p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-2xl max-w-xl mx-auto mb-10 text-left">
+                <!-- WhatsApp Integrated Form -->
+                <form id="quoteForm" class="space-y-4">
+                    <div>
+                        <label for="clientName" class="block text-sm font-medium text-gray-700 mb-1">Name / Company</label>
+                        <input type="text" id="clientName" required class="w-full border border-gray-300 rounded-md p-3 focus:ring-accent focus:border-accent outline-none transition-shadow" placeholder="Your Name or Company">
+                    </div>
+                    <div>
+                        <label for="clientEmail" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="clientEmail" required class="w-full border border-gray-300 rounded-md p-3 focus:ring-accent focus:border-accent outline-none transition-shadow" placeholder="you@company.com">
+                    </div>
+                    <div>
+                        <label for="fumeHoodCount" class="block text-sm font-medium text-gray-700 mb-1">Number of Fume Hoods</label>
+                        <select id="fumeHoodCount" class="w-full border border-gray-300 rounded-md p-3 focus:ring-accent focus:border-accent outline-none transition-shadow cursor-pointer">
+                            <option value="1 Unit">1 Unit</option>
+                            <option value="2 - 5 Units">2 - 5 Units</option>
+                            <option value="6+ Units">6+ Units</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-primaryDark text-white font-bold py-4 px-8 rounded-lg shadow-md transition-all duration-200 mt-4 text-lg hover:shadow-lg flex justify-center items-center gap-2">
+                        <!-- WhatsApp Icon -->
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.146.565 4.195 1.637 5.992L.11 23.889l6.008-1.579a11.962 11.962 0 005.913 1.554h.005c6.645 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zM12.031 21.84h-.004a9.92 9.92 0 01-5.06-1.378l-.363-.215-3.765.987.998-3.674-.236-.376a9.923 9.923 0 01-1.524-5.343c0-5.485 4.464-9.95 9.952-9.95 2.658 0 5.158 1.036 7.037 2.915a9.922 9.922 0 012.914 7.036c-.001 5.484-4.466 9.948-9.949 9.948zm5.457-7.447c-.299-.15-1.77-.874-2.044-.975-.274-.1-.473-.15-.672.15s-.77 .975-.944 1.175c-.175.2-.35.225-.649.075-.299-.15-1.263-.466-2.404-1.484-.889-.792-1.488-1.77-1.663-2.07-.175-.299-.019-.462.13-.611.135-.135.299-.35.449-.525.15-.175.2-.299.299-.5s.05-.375-.025-.525c-.075-.15-.672-1.62-.921-2.22-.243-.585-.489-.505-.672-.515-.173-.008-.372-.01-.572-.01a1.096 1.096 0 00-.797.375c-.274.3-1.047 1.025-1.047 2.5s1.072 2.898 1.222 3.098c.15.2 2.112 3.223 5.116 4.522.715.309 1.272.493 1.708.631.718.228 1.372.196 1.888.119.58-.088 1.77-.724 2.019-1.424.25-.7.25-1.3.175-1.424-.075-.125-.275-.2-.574-.35z"/></svg>
+                        Send Request via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <div class="text-white">
+                <p class="text-lg font-medium mb-2">Or contact us directly:</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-accent font-semibold">
+                    <a href="tel:#" class="hover:text-white transition-colors">[Your Contact Number]</a>
+                    <span class="hidden sm:inline text-white/50">|</span>
+                    <a href="mailto:#" class="hover:text-white transition-colors">[Your Email Address]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 [Your Company Name]. All rights reserved. | <a href="#" class="hover:text-white">[Your Website]</a></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Form Submission Logic -->
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent standard page reload on submit
+
+            // 1. Retrieve the data the user inputted
+            const clientName = document.getElementById('clientName').value;
+            const clientEmail = document.getElementById('clientEmail').value;
+            const hoodCount = document.getElementById('fumeHoodCount').value;
+
+            // 2. Set your destination WhatsApp number (Include Country Code, omit '+' or '00')
+            // [YOUR_WHATSAPP_NUMBER] - Example: '60123456789' for Malaysia (+60)
+            const waNumber = "60123456789"; 
+
+            // 3. Format the message content
+            const message = `Hello! I would like to request a quote for fume hood servicing.%0A%0A*Name/Company:* ${clientName}%0A*Email:* ${clientEmail}%0A*Number of Fume Hoods:* ${hoodCount}`;
+
+            // 4. Construct the URL and redirect
+            const waLink = `https://wa.me/${waNumber}?text=${message}`;
+            window.open(waLink, '_blank');
+        });
+    </script>
+</body>
+</html>
